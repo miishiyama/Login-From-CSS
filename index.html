@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form CSS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <img src="./assets/logo.svg" />
+        </header>
+        <main>
+            <div id="left">
+                <div class="login">
+                    <form>
+                        <div class="header">
+                            <div>
+                                <img src="./assets/log-in.svg" />
+                                <h1>Faça seu login</h1>
+                            </div>
+                            <p>Entre com suas informações de cadastro.</p>
+                        </div>
+                        <div class="email">
+                            <label>E-mail</label>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                            <div class="svg-mail">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.33329 3.33331H16.6666C17.5833 3.33331 18.3333 4.08331 18.3333 4.99998V15C18.3333 15.9166 17.5833 16.6666 16.6666 16.6666H3.33329C2.41663 16.6666 1.66663 15.9166 1.66663 15V4.99998C1.66663 4.08331 2.41663 3.33331 3.33329 3.33331Z" stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.3333 5L9.99996 10.8333L1.66663 5" stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="password">
+                            <label>Senha</label>
+                            <br>
+                            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+                            <div class="svg-lock">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8333 9.16666H4.16667C3.24619 9.16666 2.5 9.91285 2.5 10.8333V16.6667C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6667V10.8333C17.5 9.91285 16.7538 9.16666 15.8333 9.16666Z" stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.83337 9.16666V5.83332C5.83337 4.72825 6.27236 3.66845 7.05376 2.88704C7.83516 2.10564 8.89497 1.66666 10 1.66666C11.1051 1.66666 12.1649 2.10564 12.9463 2.88704C13.7277 3.66845 14.1667 4.72825 14.1667 5.83332V9.16666" stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="svg-eye">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_216_38)">
+                                        <path d="M0.833313 10C0.833313 10 4.16665 3.33334 9.99998 3.33334C15.8333 3.33334 19.1666 10 19.1666 10C19.1666 10 15.8333 16.6667 9.99998 16.6667C4.16665 16.6667 0.833313 10 0.833313 10Z" stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_216_38">
+                                            <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="remember">
+                            <div class="remember-me">
+                                <label>
+                                    <input type="checkbox" name="checkbox" id="checkbox">
+                                    <span class="checkbox-marked">
+                                        <img src="./assets/check.svg" />
+                                    </span>
+                                    Lembre-me
+                                </label>
+                            </div>
+                            <div class="i-forgot">
+                                <a href="">Esqueci minha senha</a>
+                            </div>
+                        </div>
+                        <input class="button" type="submit" onsubmit="" value="Entrar">
+                        <br>
+                        <div class="register">
+                            <a href="">Não tem uma conta? <span>Registre-se</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="right">
+                <img src="./assets/side-image.jpg">
+            </div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
