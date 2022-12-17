@@ -5,11 +5,127 @@
 }
 
 :root {
-    --text-base: #AFB6C2;
-    --text-title: #D4CCB6;
     --background: #191816;
+    --svg-logo: #D5CCB6;
+    --svg-logo-fill: #D5CCB6;
     --form-background: #24221F;
-    --primary-color: #FFC632;
+    --svg-log-in: #FFC632;
+    --text-title: #D4CCB6;
+    --text-base: #AFB6C2;
+    --text-label: #AFB6C2;
+    --text-input: #A9AFB9;
+    --input-background: #24221F;
+    --border-input: #868686;
+    --border-input-focus: #FFC632;
+    --box-shadow: #FFDE88;
+    --svg-input: #AFB6C2;
+    --svg-input-focus: #FFC632;
+    --svg-eye: #AFB6C2;
+    --label-checkbox: #A9AFB9;
+    --checkbox-background: #24221F;
+    --border-checkbox: #868686;
+    --svg-check: #473404;
+    --checkbox-background-checked: #FFC632;
+    --border-checkbox-background-checked: #FFC632;
+    --text-i-forgot: #FFC632;
+    --text-button: #473404;
+    --button-background: #FFC632;
+    --register: #FFC632;
+    --background-image: url("./assets/image-dark-yellow.png");
+    --background-mobile: #191816;
+}
+
+body.dark-green {
+    --background: #1A1919;
+    --svg-logo: #FFF7DC;
+    --svg-logo-fill: #FFF7DC;
+    --form-background: #212121;
+    --svg-log-in: #FFF7DC;
+    --text-title: #FFF7DC;
+    --text-base: #F4FFF7;
+    --text-label: #FFF7DC;
+    --text-input: #ABABAB;
+    --input-background: #2F2F2F;
+    --border-input: #4E4D4D;
+    --border-input-focus: #41A55B;
+    --box-shadow: #41A55B;
+    --svg-input: #4F4F4F;
+    --svg-input-focus: #53C271;
+    --svg-eye: #B0B0B0;
+    --label-checkbox: #F4FFF7;
+    --checkbox-background: #2F2F2F;
+    --border-checkbox: #4E4D4D;
+    --svg-check: #03310D;
+    --checkbox-background-checked: #41A55B;
+    --border-checkbox-background-checked: #41A55B;
+    --text-i-forgot: #41A55B;
+    --text-button: #03310D;
+    --button-background: #41A55B;
+    --register: #41A55B;
+    --background-image: url("./assets/image-dark-green.png");
+    --background-mobile: #212121;
+}
+
+body.bege {
+    --background: #E4DBCD;
+    --svg-logo: #2E2312;
+    --svg-logo-fill: #2E2312;
+    --form-background: #F1EADD;
+    --svg-log-in: #2E2312;
+    --text-title: #2E2312;
+    --text-base: #574C3A;
+    --text-label: #574C3A;
+    --text-input: #725F40;
+    --input-background: #EFEAE2;
+    --border-input: #574C3A;
+    --border-input-focus: #574C3A;
+    --box-shadow: #AD8F5D;
+    --svg-input: #BDB09A;
+    --svg-input-focus: #9C8B6E;
+    --svg-eye: #725F40;
+    --label-checkbox: #574C3A;
+    --checkbox-background: #EFEAE2;
+    --border-checkbox: #574C3A;
+    --svg-check: #FFFFFF;
+    --checkbox-background-checked: #574C3A;
+    --border-checkbox-background-checked: #574C3A;
+    --text-i-forgot: #574C3A;
+    --text-button: #FFFFFF;
+    --button-background: #574C3A;
+    --register: #574C3A;
+    --background-image: url("./assets/image-bege.png");
+    --background-mobile: #F1EADD;
+}
+
+body.green {
+    --background: #002C00;
+    --svg-logo: #F3E699;
+    --svg-logo-fill: #F3E699;
+    --form-background: #05340F;
+    --svg-log-in: #F3E699;
+    --text-title: #F3E699;
+    --text-base: #CCF0C9;
+    --text-label: #CCF0C9;
+    --text-input: #419658;
+    --input-background: #FFFEFE;
+    --border-input: #005B18;
+    --border-input-focus: #005B18;
+    --box-shadow: #70DC8C;
+    --svg-input: #5DC579;
+    --svg-input-focus: #53C271;
+    --svg-eye: #005B18;
+    --label-checkbox: #CCF0C9;
+    --checkbox-background: #FFFEFE;
+    --border-checkbox: #005B18;
+    --svg-check: #05340F;
+    --checkbox-background-checked: #F3E699;
+    --border-checkbox-background-checked: #F3E699;
+    --text-i-forgot: #F3E699;
+    --text-button: #05340F;
+    --button-background: #F3E699;
+    --register: #F3E699;
+    --background-image: url("./assets/image-green.png");
+    --background-mobile: #05340F;
 }
 
 body {
@@ -20,6 +136,14 @@ header {
     margin-top: 40px;
     margin-left: 40px;
     position: fixed;
+}
+
+.svg-logo svg path {
+    stroke: var(--svg-logo);
+}
+
+.svg-logo svg path:nth-child(3) {
+    fill: var(--svg-logo-fill);
 }
 
 main {
@@ -42,11 +166,16 @@ main {
     border-radius: 4px;
 }
 
-#left .header div {
+.header div {
     display: flex;
+    align-items: center;
 }
 
-#left .header div h1 {
+.svg-log-in svg path {
+    stroke: var(--svg-log-in);
+}
+
+.header div h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 24px;
@@ -56,7 +185,7 @@ main {
     margin-bottom: 5px;
 }
 
-#left .header p {
+.header p {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -65,24 +194,24 @@ main {
     margin-bottom: 27px;
 }
 
-#left .email label,
-#left .password label {
+.email label,
+.password label {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: var(--text-base);
+    color: var(--text-label);
 }
 
-#left .email input,
-#left .password input {
+.email input,
+.password input {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #A9AFB9;
-    background-color: var(--form-background);
-    border: 1px solid #868686;
+    color: var(--text-input);
+    background-color: var(--input-background);
+    border: 1px solid var(--border-input);
     border-radius: 4px;
     width: 335px;
     height: 44px;
@@ -90,142 +219,159 @@ main {
     margin-top: 5px;
 }
 
-#left .email input:focus,
-#left .password input:focus {
+.email input:focus,
+.password input:focus {
     outline: 0;
-    border: 1px solid var(--primary-color);
-    box-shadow: 0px 0px 0px 2px #FFDE88;
+    border: 1px solid var(--border-input-focus);
+    box-shadow: 0px 0px 0px 2px var(--box-shadow);
 }
 
-#left .emailinput {
+.email input {
     padding-right: 15px;
 }
 
-#left .email .svg-mail svg,
-#left .password .svg-lock svg {
+.svg-mail svg,
+.svg-lock svg {
     display: flex;
     margin-top: -32px;
     margin-left: 12px;
 }
 
-#left .email input:focus ~ .svg-mail svg path,
-#left .password input:focus ~ .svg-lock svg path {
-    stroke: var(--primary-color);
+.svg-mail svg path,
+.svg-lock svg path {
+    stroke: var(--svg-input);
 }
 
-#left .password {
+.email input:focus ~ .svg-mail svg path,
+.password input:focus ~ .svg-lock svg path {
+    stroke: var(--svg-input-focus);
+}
+
+.password {
    margin-top: 32px;
 }
 
-#left .password input {
+.password input {
     padding-right: 40px;
 }
 
-#left .password .svg-eye {
+.svg-eye {
     margin-top: -20px;
     margin-left: 303px;
 }
 
-#left .remember {
+.svg-eye svg g path {
+    stroke: var(--svg-eye);
+}
+
+.remember {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-#left .remember .remember-me label {
+.remember-me label {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #A9AFB9;
+    color: var(--label-checkbox);
     display: flex;
-    
 }
 
-#left .remember .remember-me label input {
+.remember-me label input {
     margin-right: 5px;
     width: 20px;
     opacity: 0;
 }
 
-#left .remember .remember-me label span {
+.remember-me label span {
     position: absolute;
     height: 20px;
     width: 20px;
-    background-color: var(--form-background);
-    border: 1px solid #868686;
+    background-color: var(--checkbox-background);
+    border: 1px solid var(--border-checkbox);
     border-radius: 4px;
     transition: 0.1s;
 }
 
-#left .remember .remember-me label span img {
+.svg-check svg path {
+    stroke: var(--svg-check);
+}
+
+.remember-me label span svg {
     opacity: 0;
     transition: 0.1s;
 }
 
-#left .remember .remember-me label input:checked ~ span {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+.remember-me input:checked ~ span {
+    background-color: var(--checkbox-background-checked);
+    border-color: var(--border-checkbox-background-checked);
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
-#left .remember .remember-me label input:checked ~ span img {
+.remember-me input:checked ~ span svg {
     opacity: 1;
 }
 
-#left .remember .i-forgot a {
+.i-forgot a {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    color: var(--primary-color);
+    color: var(--text-i-forgot);
 }
 
-#left .button {
+.button {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
     text-transform: uppercase;
-    color: #473404;
+    color: var(--text-button);
     width: 334px;
     height: 51px;
     margin-top: 20px;
-    background-color: var(--primary-color);
+    background-color: var(--button-background);
     border-radius: 4px;
     cursor: pointer;
     border: none;
     margin-bottom: 14px;
 }
 
-#left .register {
+.register {
     display: flex;
     justify-content: center;
 }
 
-#left .register a {
+.register a {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: var(--primary-color);
+    color: var(--register);
 }
 
-#left .register a span {
+.register a span {
     font-weight: 600;
 }
 
 #right {
     grid-area: b;
-}
-
-#right img {
     height: 100vh;
     width: 720px;
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 500px) {
+    body {
+        background-color: var(--background-mobile);
+    }
     header {
         margin-left: 20px;
     }
@@ -237,9 +383,9 @@ main {
         height: 100%;
         width: 100%;
         margin-top: 98px;
-        background-color: var(--background);
+        background-color: var(--background-mobile);
     }
-    #right img {
+    #right {
         opacity: 0;
         height: 0;
         width: 0;
