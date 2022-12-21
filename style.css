@@ -149,8 +149,7 @@ header {
 main {
     display: grid;
     grid-template-columns: 1fr 720px;
-    grid-template-areas: 
-        "a b";
+    grid-template-areas: "a b";
     align-items: center;
     justify-items: center;
 }
