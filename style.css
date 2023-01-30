@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 :root {
@@ -32,7 +32,7 @@
     --button-background: #FFC632;
     --register: #FFC632;
     --background-image: url("./assets/image-dark-yellow.png");
-    --background-mobile: #191816;
+    --background-mobile: #191816
 }
 
 body.dark-green {
@@ -63,7 +63,7 @@ body.dark-green {
     --button-background: #41A55B;
     --register: #41A55B;
     --background-image: url("./assets/image-dark-green.png");
-    --background-mobile: #212121;
+    --background-mobile: #212121
 }
 
 body.bege {
@@ -94,7 +94,7 @@ body.bege {
     --button-background: #574C3A;
     --register: #574C3A;
     --background-image: url("./assets/image-bege.png");
-    --background-mobile: #F1EADD;
+    --background-mobile: #F1EADD
 }
 
 body.green {
@@ -125,25 +125,25 @@ body.green {
     --button-background: #F3E699;
     --register: #F3E699;
     --background-image: url("./assets/image-green.png");
-    --background-mobile: #05340F;
+    --background-mobile: #05340F
 }
 
 body {
-    background-color: var(--background);
+    background-color: var(--background)
 }
 
 header {
     margin-top: 40px;
     margin-left: 40px;
-    position: fixed;
+    position: fixed
 }
 
 .svg-logo svg path {
-    stroke: var(--svg-logo);
+    stroke: var(--svg-logo)
 }
 
 .svg-logo svg path:nth-child(3) {
-    fill: var(--svg-logo-fill);
+    fill: var(--svg-logo-fill)
 }
 
 main {
@@ -151,7 +151,7 @@ main {
     grid-template-columns: 1fr 720px;
     grid-template-areas: "a b";
     align-items: center;
-    justify-items: center;
+    justify-items: center
 }
 
 #left {
@@ -162,49 +162,49 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 4px
 }
 
 .header div {
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 .svg-log-in svg path {
-    stroke: var(--svg-log-in);
+    stroke: var(--svg-log-in)
 }
 
 .header div h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
     color: var(--text-title);
     margin-left: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .header p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: var(--text-base);
-    margin-bottom: 27px;
+    margin-bottom: 27px
 }
 
 .email label,
 .password label {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: var(--text-label);
+    color: var(--text-label)
 }
 
 .email input,
 .password input {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -215,73 +215,73 @@ main {
     width: 335px;
     height: 44px;
     padding-left: 37px;
-    margin-top: 5px;
+    margin-top: 5px
 }
 
 .email input:focus,
 .password input:focus {
     outline: 0;
     border: 1px solid var(--border-input-focus);
-    box-shadow: 0px 0px 0px 2px var(--box-shadow);
+    box-shadow: 0px 0px 0px 2px var(--box-shadow)
 }
 
 .email input {
-    padding-right: 15px;
+    padding-right: 15px
 }
 
 .svg-mail svg,
 .svg-lock svg {
     display: flex;
     margin-top: -32px;
-    margin-left: 12px;
+    margin-left: 12px
 }
 
 .svg-mail svg path,
 .svg-lock svg path {
-    stroke: var(--svg-input);
+    stroke: var(--svg-input)
 }
 
 .email input:focus ~ .svg-mail svg path,
 .password input:focus ~ .svg-lock svg path {
-    stroke: var(--svg-input-focus);
+    stroke: var(--svg-input-focus)
 }
 
 .password {
-   margin-top: 32px;
+   margin-top: 32px
 }
 
 .password input {
-    padding-right: 40px;
+    padding-right: 40px
 }
 
 .svg-eye {
     margin-top: -20px;
-    margin-left: 303px;
+    margin-left: 303px
 }
 
 .svg-eye svg g path {
-    stroke: var(--svg-eye);
+    stroke: var(--svg-eye)
 }
 
 .remember {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 30px
 }
 
 .remember-me label {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: var(--label-checkbox);
-    display: flex;
+    display: flex
 }
 
 .remember-me label input {
     margin-right: 5px;
     width: 20px;
-    opacity: 0;
+    opacity: 0
 }
 
 .remember-me label span {
@@ -291,16 +291,16 @@ main {
     background-color: var(--checkbox-background);
     border: 1px solid var(--border-checkbox);
     border-radius: 4px;
-    transition: 0.1s;
+    transition: 0.1s
 }
 
 .svg-check svg path {
-    stroke: var(--svg-check);
+    stroke: var(--svg-check)
 }
 
 .remember-me label span svg {
     opacity: 0;
-    transition: 0.1s;
+    transition: 0.1s
 }
 
 .remember-me input:checked ~ span {
@@ -308,24 +308,24 @@ main {
     border-color: var(--border-checkbox-background-checked);
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .remember-me input:checked ~ span svg {
-    opacity: 1;
+    opacity: 1
 }
 
 .i-forgot a {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    color: var(--text-i-forgot);
+    color: var(--text-i-forgot)
 }
 
 .button {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
@@ -338,25 +338,25 @@ main {
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    margin-bottom: 14px;
+    margin-bottom: 14px
 }
 
 .register {
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 
 .register a {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: var(--register);
+    color: var(--register)
 }
 
 .register a span {
-    font-weight: 600;
+    font-weight: 600
 }
 
 #right {
@@ -364,29 +364,29 @@ main {
     height: 100vh;
     width: 720px;
     background-image: var(--background-image);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 @media (max-width: 500px) {
     body {
-        background-color: var(--background-mobile);
+        background-color: var(--background-mobile)
     }
     header {
-        margin-left: 20px;
+        margin-left: 20px
     }
     main {
         display: flex;
-        flex-direction: column;
+        flex-direction: column
     }
     #left {
         height: 100%;
         width: 100%;
         margin-top: 98px;
-        background-color: var(--background-mobile);
+        background-color: var(--background-mobile)
     }
     #right {
         opacity: 0;
         height: 0;
-        width: 0;
+        width: 0
     }
 }

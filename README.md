@@ -26,6 +26,8 @@ Siga esses passos para instalar o repositório na sua máquina:
 As tecnologias utilizadas neste projeto são:
 - HTML
 - CSS
+- Media Queries
+- Google Fonts
 
 ## Créditos ❤️
 Feito por [Millene Eduarda Ishiyama](https://github.com/miishiyama/).
