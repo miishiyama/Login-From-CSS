@@ -1,7 +1,9 @@
-# Login From CSS [Bege]
+# Login From CSS
 
-## Web
+## Bege
+
+### Web
 ![preview](./Login-From-CSS-Bege-1440x747.png)
 
-## Mobile
+### Mobile
 ![preview](./Login-From-CSS-Bege-425x635.png)
