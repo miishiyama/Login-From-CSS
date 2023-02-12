@@ -1,7 +1,9 @@
-# Login From CSS [Dark Yellow]
+# Login From CSS
 
-## Web
+## Dark Yellow
+
+### Web
 ![preview](./Login-From-CSS-Dark-Yellow-1440x747.png)
 
-## Mobile
+### Mobile
 ![preview](./Login-From-CSS-Dark-Yellow-425x635.png)
