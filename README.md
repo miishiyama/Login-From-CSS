@@ -20,7 +20,7 @@
   </a>
 </p>
 
-![preview](./preview/Dark-Yellow/Login-From-CSS-Dark-Yellow-1440x747.png)
+![preview](./preview/Dark-Yellow/Login-From-CSS-Dark-Yellow.png)
 
 ## Projeto 💻
 Projeto de um desafio da Rocketseat de criar um formulário de login.
